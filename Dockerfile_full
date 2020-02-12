@@ -1,0 +1,12 @@
+FROM node:12.14.1
+WORKDIR /usr/src/app
+
+COPY package.json yarn.lock /usr/src/app/
+RUN yarn
+
+COPY . /usr/src/app
+RUN curl -sf https://gobinaries.com/tj/node-prune | sh \
+  && which node-prune \
+  && node-prune
+
+CMD ["node", "index.js"]

@@ -1,0 +1,17 @@
+{
+  "name": "node-prune-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "docker build --no-cache -t tasukuuno/node-prune-test:full -f Dockerfile_full .",
+    "build_alpine": "docker build --no-cache -t tasukuuno/node-prune-test:alpine -f Dockerfile_alpine ."
+  },
+  "repository": "git@github.com:TasukuUno/node-prune-test.git",
+  "author": "TasukuUno <tsk.uno@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "yaml": "^1.7.2"
+  }
+}
