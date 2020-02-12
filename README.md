@@ -6,7 +6,7 @@ This is a sample project for trying [node-prune](https://github.com/tj/node-prun
 ## :ok_woman: node:12.15.0
 
 [Dockerfile_full](https://github.com/TasukuUno/node-prune-test/blob/master/Dockerfile_full)
-build on node:12.14.1 
+build on node:12.15.0
 
 ```
 yarn build
@@ -31,7 +31,7 @@ yarn build
 ## :no_good_woman: node:12.15.0-alpine
 
 [Dockerfile_alpine](https://github.com/TasukuUno/node-prune-test/blob/master/Dockerfile_alpine)
-build on node:12.14.1-alpine 
+build on node:12.15.0-alpine
 
 ```
 yarn build_alpine
